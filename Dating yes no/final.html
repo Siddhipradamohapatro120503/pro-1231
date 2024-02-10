@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Wish</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffd6e0; /* Pink background */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .valentine-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #ff66a3; /* Pink heading */
+      margin-top: 0;
+    }
+
+    p {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+<div class="valentine-card">
+  <h1>Your are mine Valentine</h1>
+  <!-- <p>Today is a day to celebrate love and cherish those who are special to us.</p> -->
+  <p>Fix date is: 14 Feb 2024</span></p>
+</div>
+
+<script>
+  // Function to get the current date and update the HTML element
+  function updateDate() {
+    var currentDateElement = document.getElementById("currentDate");
+    var currentDate = new Date();
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    currentDateElement.textContent = currentDate.toLocaleDateString('en-US', options);
+  }
+
+  // Call the updateDate function when the page loads
+  updateDate();
+</script>
+
+</body>
+</html>
